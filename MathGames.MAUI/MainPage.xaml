@@ -3,7 +3,58 @@
     x:Class="MathGames.MAUI.MainPage"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-    <ContentView />
+    <ContentView>
+        <VerticalStackLayout Padding="50" Spacing="25">
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="This is your math game!" />
+            <Label
+                FontSize="32"
+                HorizontalOptions="Center"
+                Text="What game do you want to play?" />
+            <Grid ColumnSpacing="10" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    Grid.Column="0"
+                    Clicked="OnGameMode"
+                    Text="Addition" />
+                <Button
+                    Grid.Column="1"
+                    Clicked="OnGameMode"
+                    Text="Subtraction" />
+                <Button
+                    Grid.Column="2"
+                    Clicked="OnGameMode"
+                    Text="Multiplication" />
+                <Button
+                    Grid.Column="3"
+                    Clicked="OnGameMode"
+                    Text="Division" />
+                <Button
+                    Grid.Row="1"
+                    Grid.ColumnSpan="4"
+                    BackgroundColor="ForestGreen"
+                    Clicked="OnPreviousGame"
+                    Text="View Previous Game" />
+            </Grid>
+        </VerticalStackLayout>
+
+    </ContentView>
+
+
+
 
 
 </ContentPage>

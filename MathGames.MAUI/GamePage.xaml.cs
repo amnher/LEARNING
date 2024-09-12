@@ -2,8 +2,11 @@ namespace MathGames.MAUI;
 
 public partial class GamePage : ContentPage
 {
-	public GamePage()
+	public string GameType { get; set; }
+	public GamePage(string gameType)
 	{
 		InitializeComponent();
+		GameType = gameType;
+		BindingContext = this;
 	}
 }
