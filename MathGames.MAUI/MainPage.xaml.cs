@@ -19,6 +19,7 @@
         private void OnPreviousGame(object sender, EventArgs e)
         {
             Navigation.PushAsync(new OnPreviousChosenGame());
+            DisplayAlert($"Previous Game Mode", "Welcome to this mode", "Continue");
         }
     }
 
