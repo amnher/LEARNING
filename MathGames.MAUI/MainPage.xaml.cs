@@ -9,17 +9,18 @@
             InitializeComponent();
         }
 
-        private void OnGameMode(object sender, EventArgs e)
+        private void OnMode(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            Navigation.PushAsync(new GamePage(btn.Text));
-            DisplayAlert($"{btn.Text} Mode", "Welcome to this mode", "Continue");
+            Navigation.PushAsync(new GameMode(btn.Text));
+            
         }
 
-        private void OnPreviousGame(object sender, EventArgs e)
+        private void OnPreviousMode(object sender, EventArgs e)
         {
+            Button btn = (Button)sender;
             Navigation.PushAsync(new OnPreviousChosenGame());
-            DisplayAlert($"Previous Game Mode", "Welcome to this mode", "Continue");
+
         }
     }
 
