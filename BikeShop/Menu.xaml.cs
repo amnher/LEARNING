@@ -1,4 +1,4 @@
-﻿ using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,20 +16,19 @@ using System.Windows.Shapes;
 namespace BikeShop
 {
     /// <summary>
-    /// Interaction logic for Contact.xaml
+    /// Interaction logic for Menu.xaml
     /// </summary>
-    public partial class Contact : Page
+    public partial class Menu : Page
     {
-        public Contact()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello");
+            NavigationService.Navigate(new Uri("/Contact.xaml", UriKind.Relative));
+
         }
     }
-
-   
 }
