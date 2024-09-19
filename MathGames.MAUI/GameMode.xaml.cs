@@ -24,6 +24,8 @@ public partial class GameMode : ContentPage
         };
 
         var random = new Random();
+        firstNumber = gameMode != "Division" ?  random.Next(1,9): random.Next(1, 99);
+        secondNumber = gameMode != "Division" ? random.Next(1, 9) : random.Next(1, 99);
     }
     private void OnAnswerSubmitted(object sender, EventArgs e)
     {
