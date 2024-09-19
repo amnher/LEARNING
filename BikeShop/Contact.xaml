@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="BikeShop.Contact"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BikeShop"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Contact"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock
+            Margin="2"
+            FontSize="15"
+            Text="Sender" />
+        <TextBlock
+            Grid.Row="1"
+            Margin="2"
+            FontSize="15"
+            Text="Message" />
+        <TextBox
+            Grid.Column="1"
+            Margin="2"
+            FontSize="15"
+            Text="" />
+        <TextBox
+            Grid.Row="1"
+            Grid.Column="1"
+            Margin="2"
+            FontSize="15"
+            Text=""
+            TextWrapping="Wrap" />
+    </Grid>
+</Page>

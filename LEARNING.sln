@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathGames.MAUI", "MathGames.MAUI\MathGames.MAUI.csproj", "{EEBFBF59-2CAF-47AA-8F20-B4734E48B220}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDo", "ToDo\ToDo.csproj", "{7E78CC9C-9764-4BCF-8DB0-E0B609AB883B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo", "ToDo\ToDo.csproj", "{7E78CC9C-9764-4BCF-8DB0-E0B609AB883B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeShop", "BikeShop\BikeShop.csproj", "{8A9F07BB-7ED8-4F93-8E14-F9D05F02204A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{7E78CC9C-9764-4BCF-8DB0-E0B609AB883B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E78CC9C-9764-4BCF-8DB0-E0B609AB883B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7E78CC9C-9764-4BCF-8DB0-E0B609AB883B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8A9F07BB-7ED8-4F93-8E14-F9D05F02204A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A9F07BB-7ED8-4F93-8E14-F9D05F02204A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A9F07BB-7ED8-4F93-8E14-F9D05F02204A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A9F07BB-7ED8-4F93-8E14-F9D05F02204A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
