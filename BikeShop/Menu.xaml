@@ -12,12 +12,30 @@
 
     <Grid>
 
+        <Button Content="Press me">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse
+                            Width="100"
+                            Height="100"
+                            Fill="{TemplateBinding Background}" />
+                        <Label
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Content="{TemplateBinding Content}" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
         <Button
             Width="160"
             Height="99"
             Margin="40,166,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            Click="Button_Click_2"
             Content="Products"
             FontSize="24" />
         <Button
@@ -26,6 +44,7 @@
             Margin="220,166,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            Click="Button_Click_1"
             Content="Live Support"
             FontSize="24" />
         <Button
@@ -46,5 +65,6 @@
             FontWeight="Bold"
             Text="Adventure Works"
             TextWrapping="Wrap" />
+
     </Grid>
 </Page>
