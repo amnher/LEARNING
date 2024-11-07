@@ -20,6 +20,7 @@
                 Text="Time Elapsed: 0.0 seconds" />
             <FlexLayout
                 x:Name="AnimalButtons"
+                IsVisible="False"
                 MaximumWidthRequest="400"
                 Wrap="Wrap">
                 <Button

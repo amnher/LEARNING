@@ -1,15 +1,12 @@
-﻿
-
-namespace AnimalMatchingGame.MAUI
+﻿namespace AnimalMatchingGame.MAUI
 {
     public partial class MainPage : ContentPage
     {
         
+
         public MainPage()
         {
             InitializeComponent();
-            AnimalButtons.IsVisible = false;
-
             
         }
 
@@ -18,18 +15,19 @@ namespace AnimalMatchingGame.MAUI
             AnimalButtons.IsVisible = true;
             PlayAgainButton.IsVisible = false;
 
-            List<string> animalEmoji =
-            [
-                "🐙","🐙",
+            List<string> animalEmoji = [
                 "🐡","🐡",
-                "🐘","🐘",
-                "🐋","🐋",
-                "🐫","🐫",
-                "🦕","🦕",
-                "🦘","🦘",
                 "🐖","🐖",
+                "🦘","🦘",
+                "🐫","🐫",
+                "🐋","🐋",
+                "🐘","🐘",
+                "🐙","🐙",
+                "🐔","🐔",
+
             ];
-            foreach (var button in AnimalButtons.Children.OfType<Button>()) { 
+            foreach (var button in AnimalButtons.Children.OfType<Button>())
+            {
                 int index = Random.Shared.Next(animalEmoji.Count);
                 string nextEmoji = animalEmoji[index];
                 button.Text = nextEmoji;
@@ -64,11 +62,11 @@ namespace AnimalMatchingGame.MAUI
                 {
                     buttonClicked.BackgroundColor = Colors.Red;
                     lastClicked = buttonClicked;
-                    findingMatch = true;
+                    findingMatch = true;    
                 }
                 else
                 {
-                    if ((buttonClicked != lastClicked) && (buttonClicked.Text == lastClicked.Text) && (!String.IsNullOrWhiteSpace(buttonClicked.Text)))
+                    if((buttonClicked != lastClicked) && (buttonClicked.Text == lastClicked.Text) && (!String.IsNullOrWhiteSpace(buttonClicked.Text)))
                     {
                         matchesFound++;
                         lastClicked.Text = " ";
@@ -85,6 +83,7 @@ namespace AnimalMatchingGame.MAUI
                 AnimalButtons.IsVisible = false;
                 PlayAgainButton.IsVisible = true;
             }
+
         }
     }
 
