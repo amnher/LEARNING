@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BikeShop", "BikeShop\BikeSh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Phoneword.MAUI", "Phoneword.MAUI\Phoneword.MAUI.csproj", "{E4BC8CCE-7F73-40DF-8AC9-E10804284372}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstConsoleApp", "MyFirstConsoleApp\MyFirstConsoleApp.csproj", "{3A6664F6-3C6B-423E-A407-8A86D422CE56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFirstConsoleApp", "MyFirstConsoleApp\MyFirstConsoleApp.csproj", "{3A6664F6-3C6B-423E-A407-8A86D422CE56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalMatchingGame.MAUI", "AnimalMatchingGame.MAUI\AnimalMatchingGame.MAUI.csproj", "{FAD21E3E-540F-47EC-B31B-C046FE3F95C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalMatchingGame.MAUI", "AnimalMatchingGame.MAUI\AnimalMatchingGame.MAUI.csproj", "{FAD21E3E-540F-47EC-B31B-C046FE3F95C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExperimentWithControls", "ExperimentWithControls\ExperimentWithControls.csproj", "{7292E4A5-1028-4AF1-9F42-525E9E5513A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,30 @@ Global
 		{FAD21E3E-540F-47EC-B31B-C046FE3F95C7}.Release|x86.ActiveCfg = Release|Any CPU
 		{FAD21E3E-540F-47EC-B31B-C046FE3F95C7}.Release|x86.Build.0 = Release|Any CPU
 		{FAD21E3E-540F-47EC-B31B-C046FE3F95C7}.Release|x86.Deploy.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|ARM64.Deploy.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|x64.Build.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|x64.Deploy.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|x86.Build.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|ARM64.Build.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|ARM64.Deploy.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x64.ActiveCfg = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x64.Build.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x64.Deploy.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x86.Build.0 = Release|Any CPU
+		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x86.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
