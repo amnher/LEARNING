@@ -7,6 +7,14 @@
         public MainPage()
         {
             InitializeComponent();
+            BirdPicker.ItemsSource = new String[]
+            {
+                "Duck",
+                "Pigeon",
+                "Penguin",
+                "Ostrich",
+                "Owl"
+            };
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -34,6 +42,15 @@
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             SliderValue.Text = e.NewValue.ToString();
+        }
+
+        private void AddBird_Clicked(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrEmpty(Birds.Text))
+            {
+                Birds.Text += Environment.NewLine;
+            }
+            Birds.Text += BirdPicker.SelectedItem;
         }
     }
 

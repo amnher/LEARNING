@@ -65,6 +65,28 @@
                 BackgroundColor="LightBlue"
                 SemanticProperties.Description="The number the user chose with the slider"
                 Text="" />
+            <HorizontalStackLayout Spacing="20">
+                <VerticalStackLayout>
+                    <Label SemanticProperties.Description="Picks a bird" Text="Pick a bird" />
+                    <Picker x:Name="BirdPicker" />
+                </VerticalStackLayout>
+                <VerticalStackLayout>
+                    <Label SemanticProperties.Description="A list of birds" Text="Some birds" />
+                    <Label
+                        x:Name="Birds"
+                        Padding="10"
+                        BackgroundColor="DarkBlue"
+                        MinimumWidthRequest="150"
+                        SemanticProperties.Description="Shows the added birds"
+                        TextColor="White" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+            <Button
+                x:Name="AddBird"
+                Margin="0,0,0,20"
+                SemanticProperties.Hint="Adds a bird"
+                Text="Add a bird" 
+                Clicked="AddBird_Clicked"/>
         </VerticalStackLayout>
     </ScrollView>
 
