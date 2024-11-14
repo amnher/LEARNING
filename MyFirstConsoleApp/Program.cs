@@ -32,4 +32,5 @@ void OperatorExamples()
     // A Boolean variable is either true or false
     bool truthValue = true;
     Console.WriteLine(truthValue);
+    string line = Console.ReadLine();
 }

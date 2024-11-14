@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalMatchingGame.MAUI", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExperimentWithControls", "ExperimentWithControls\ExperimentWithControls.csproj", "{7292E4A5-1028-4AF1-9F42-525E9E5513A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PickRandomCards", "PickRandomCards\PickRandomCards.csproj", "{57BA34C6-51CE-4B33-816E-F940214F9156}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,22 @@ Global
 		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x86.ActiveCfg = Release|Any CPU
 		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x86.Build.0 = Release|Any CPU
 		{7292E4A5-1028-4AF1-9F42-525E9E5513A7}.Release|x86.Deploy.0 = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|x64.Build.0 = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Debug|x86.Build.0 = Debug|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|ARM64.Build.0 = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|x64.ActiveCfg = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|x64.Build.0 = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|x86.ActiveCfg = Release|Any CPU
+		{57BA34C6-51CE-4B33-816E-F940214F9156}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
