@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="InventorySystem.MAUI.Pages.frmLogin"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="LOGIN Window">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".9*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width=".9*" />
+        </Grid.ColumnDefinitions>
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            CornerRadius="20"
+            Color="LightBlue" />
+        <HorizontalStackLayout
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="30"
+            Spacing="10">
+            <VerticalStackLayout Spacing="10">
+                <Label
+                    Margin="0,20,0,0"
+                    HorizontalOptions="Start"
+                    Text="Username: "
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="txtusername"
+                    HorizontalOptions="Start"
+                    Placeholder="Username"
+                    WidthRequest="330" />
+                <Label
+                    HorizontalOptions="Start"
+                    Text="Password: "
+                    VerticalOptions="Center" />
+                <Entry
+                    x:Name="txtpass"
+                    HorizontalOptions="Start"
+                    IsPassword="True"
+                    Placeholder="Password"
+                    WidthRequest="330" />
+                <HorizontalStackLayout Spacing="10">
+                    <Button
+                        x:Name="btnlogin"
+                        Clicked="btnlogin_Clicked"
+                        Text="Login"
+                        WidthRequest="100" />
+                    <Button Text="Clear" WidthRequest="100" />
+                    <Button
+                        Clicked="Button_Clicked"
+                        Text="Close"
+                        WidthRequest="100" />
+                </HorizontalStackLayout>
+                <Grid ColumnSpacing="10" RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="15" Text="Time: " />
+                    <Label
+                        x:Name="lbltime"
+                        Grid.Column="1"
+                        FontSize="15" />
+                    <Label
+                        Grid.Row="1"
+                        FontSize="15"
+                        Text="Date: " />
+                    <Label
+                        x:Name="lbldate"
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        FontSize="15" />
+                </Grid>
+
+
+
+            </VerticalStackLayout>
+
+            <Image Source="padlock.png" />
+        </HorizontalStackLayout>
+
+    </Grid>
+
+</ContentPage>

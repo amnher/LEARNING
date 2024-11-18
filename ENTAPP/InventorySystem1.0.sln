@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35506.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem1.0", "InventorySystem1.0\InventorySystem1.0.csproj", "{CA97507A-5B5D-495E-9A8A-7948598FCB78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.MAUI", "InventorySystem.MAUI\InventorySystem.MAUI.csproj", "{8FA0CAF3-DB7D-46B0-948A-03B5B78D6040}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA97507A-5B5D-495E-9A8A-7948598FCB78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA97507A-5B5D-495E-9A8A-7948598FCB78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA97507A-5B5D-495E-9A8A-7948598FCB78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA97507A-5B5D-495E-9A8A-7948598FCB78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FA0CAF3-DB7D-46B0-948A-03B5B78D6040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FA0CAF3-DB7D-46B0-948A-03B5B78D6040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FA0CAF3-DB7D-46B0-948A-03B5B78D6040}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8FA0CAF3-DB7D-46B0-948A-03B5B78D6040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FA0CAF3-DB7D-46B0-948A-03B5B78D6040}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
