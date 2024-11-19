@@ -2,6 +2,7 @@
 
 internal class CardPicker
 {
+    public string? name;
     public static string[] PickSomeCards(int numberOfCards)
     {
         string[] pickedCards = new string[numberOfCards];

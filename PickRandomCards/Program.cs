@@ -5,7 +5,7 @@ internal class Program
     static void Main(string[] args)
     {
         
-        
+        CardPicker cp = new CardPicker() { name = "Hello" };
         Console.Write("Enter Number of cards to pick: ");
         string? line = Console.ReadLine();
         if (int.TryParse(line, out int numberOfCards))
@@ -17,6 +17,13 @@ internal class Program
         else 
         { 
             Console.WriteLine($"The value \"{line}\" entered is not valid");
+        }
+
+        double[] randomDoubles = new double[20];
+        foreach (var item in randomDoubles)
+        {
+            double value = Random.Shared.NextDouble();
+
         }
     }
 }
