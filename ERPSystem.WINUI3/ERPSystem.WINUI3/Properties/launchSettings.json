@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "ERPSystem.WINUI3 (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "ERPSystem.WINUI3 (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

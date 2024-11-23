@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="ERPSystem.WINUI3.Inventory.InventoryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:ERPSystem.WINUI3.Inventory"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <muxc:TabView
+            x:Name="MyTabView"
+            IsAddTabButtonVisible="False"
+            TabWidthMode="Equal">
+            <muxc:TabView.TabItems>
+                <muxc:TabViewItem
+                    Header="Stock Master"
+                    IsClosable="False"
+                    Tag="items">
+                    <muxc:TabViewItem.IconSource>
+                        <SymbolIconSource Symbol="Placeholder" />
+                    </muxc:TabViewItem.IconSource>
+                    <Frame x:Name="items" />
+                </muxc:TabViewItem>
+                <muxc:TabViewItem
+                    Header="Stock-out"
+                    IsClosable="False"
+                    Tag="stockout">
+                    <muxc:TabViewItem.IconSource>
+                        <SymbolIconSource Symbol="Placeholder" />
+                    </muxc:TabViewItem.IconSource>
+                    <Frame x:Name="stockout" />
+                </muxc:TabViewItem>
+                <muxc:TabViewItem
+                    Header="Stock Return"
+                    IsClosable="False"
+                    Tag="stockreturn">
+                    <muxc:TabViewItem.IconSource>
+                        <SymbolIconSource Symbol="Placeholder" />
+                    </muxc:TabViewItem.IconSource>
+                    <Frame x:Name="stockreturn" />
+                </muxc:TabViewItem>
+                <muxc:TabViewItem
+                    Header="Settings"
+                    IsClosable="False"
+                    Tag="stocksettings">
+                    <muxc:TabViewItem.IconSource>
+                        <SymbolIconSource Symbol="Placeholder" />
+                    </muxc:TabViewItem.IconSource>
+                    <Frame x:Name="stocksettings" />
+                </muxc:TabViewItem>
+                <muxc:TabViewItem
+                    Header="Reports"
+                    IsClosable="False"
+                    Tag="stockreport">
+                    <muxc:TabViewItem.IconSource>
+                        <SymbolIconSource Symbol="Placeholder" />
+                    </muxc:TabViewItem.IconSource>
+                    <Frame x:Name="stockreport" />
+                </muxc:TabViewItem>
+            </muxc:TabView.TabItems>
+
+        </muxc:TabView>
+    </Grid>
+</Page>
