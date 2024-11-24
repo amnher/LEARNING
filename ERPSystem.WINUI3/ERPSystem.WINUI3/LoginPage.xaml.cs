@@ -31,8 +31,6 @@ namespace ERPSystem.WINUI3
             this.InitializeComponent();
         }
         SQLConfig config = new SQLConfig();
-        MessageDialog? failed = new("Failed!");
-        MessageDialog? success = new("Success!");
         string sql;
         private async void btnlogin_Click(object sender, RoutedEventArgs e)
         {
@@ -49,6 +47,16 @@ namespace ERPSystem.WINUI3
                 }
                 else
                 {
+                    var dialog = new ContentDialog 
+                    { 
+                        Title = "Error", 
+                        Content = "Invalid credentials", 
+                        CloseButtonText = "OK" 
+                    };
+                    var messageDialog = new MessageDialog("This is a message dialog", "Title"); 
+                    messageDialog.Commands.Add(new UICommand("OK")); 
+                    messageDialog.Commands.Add(new UICommand("Cancel")); 
+                    await messageDialog.ShowAsync();
                     txtusername.Text = "";
                     txtpass.Text = "";
                 }
