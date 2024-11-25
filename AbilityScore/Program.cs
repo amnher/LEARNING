@@ -16,18 +16,33 @@ while (true)
 
 static int ReadInt(int defaultValue, string prompt)
 {
-    Console.WriteLine($"{prompt} [" + defaultValue + "]" );
-    if(int.TryParse(prompt, out int result))
+    Console.Write($"{prompt} [" + defaultValue + "]: " );
+    string? val = Console.ReadLine();
+    if(int.TryParse(val, out int result))
+    {
+        Console.WriteLine($"   using value {result}");
         return result;
+    }
     else
+    {
+        Console.WriteLine($"   using default value {defaultValue}");
         return defaultValue;
+    }
+        
 }
 
 static double ReadDouble(double defaultValue, string prompt)
 {
-    Console.WriteLine($"{prompt} [" + defaultValue + "]");
-    if (double.TryParse(prompt, out double result))
+    Console.Write($"{prompt} [" + defaultValue + "]: ");
+    string? val = Console.ReadLine();
+    if (double.TryParse(val, out double result))
+    {
+        Console.WriteLine($"   using value {result}");
         return result;
+    }
     else
+    {
+        Console.WriteLine($"   using default value {defaultValue}");
         return defaultValue;
+    }
 }

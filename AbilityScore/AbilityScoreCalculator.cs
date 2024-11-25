@@ -11,7 +11,7 @@ internal class AbilityScoreCalculator
         // Divide the roll result by the DivideBy field
         double divided = RollResult / DivideBy;
         // Add AddAmount to the result and round down
-        int added = AddAmount += (int)divided;
+        int added = AddAmount + (int)divided;
         // If the result is too small, use Minimum
         if (added < Minimum)
         {
