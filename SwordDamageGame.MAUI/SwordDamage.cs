@@ -11,22 +11,21 @@ namespace SwordDamageGame
         public const int BASE_DAMAGE = 3;
         public const int FLAME_DAMAGE = 2;
         public int Roll;
-        private decimal magicMultiplier = 1M;
+        public decimal MagicMultiplier = 1M;
         public int Damage;
-
         public void CalculateDamage()
         {
-            Damage = (int)(Roll * magicMultiplier) + BASE_DAMAGE;
+            Damage = (int)(Roll * MagicMultiplier) + BASE_DAMAGE;
         }
         public void SetMagic(bool isMagic)
         {
             if (isMagic)
             {
-                magicMultiplier = 1.75M;
+                MagicMultiplier = 1.75M;
             }
             else
             {
-                magicMultiplier = 1M;
+                MagicMultiplier = 1M;
             }
             CalculateDamage();
         }
