@@ -8,38 +8,30 @@ namespace PaintBallArena
 {
     class PaintballGun
     {
-        public const int MAGAZINE_SIZE = 16;
-        
-        
-        
-        public bool IsEmpty() { return BallsLoaded == 0; }
-
-        public int balls
-        { 
-            get { return balls; } 
-            set 
-            {
-               if(value >0)
-                    balls = value;
-               Reload();
-            } 
-        }
-
-        public int BallsLoaded { get; private set; }
-
-
-        public int GetBalls() { return balls; }
-        
-        public void SetBalls(int numberOfBalls)
+        private int balls;
+        public PaintballGun(int balls, int magazineSize, bool loaded)
         {
-            if (numberOfBalls > 0)
-                balls = numberOfBalls;
-            Reload();
+            this.balls = balls;
+            MagazineSize = magazineSize;
+            if (loaded) Reload();
+        }
+        public int MagazineSize { get; private set; }
+        public int BallsLoaded { get; private set; }
+        public bool IsEmpty() { return BallsLoaded == 0; }
+        public int Balls
+        {
+            get { return balls; }
+            set
+            {
+                if (value > 0)
+                    balls = value;
+                Reload();
+            }
         }
         public void Reload()
         {
-            if (balls > MAGAZINE_SIZE)
-                BallsLoaded = MAGAZINE_SIZE;
+            if (balls > MagazineSize)
+                BallsLoaded = MagazineSize;
             else
                 BallsLoaded = balls;
         }
