@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwordGameApp", "SwordGameAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwordGameApp.MAUI", "SwordGameApp.MAUI\SwordGameApp.MAUI.csproj", "{C047AB67-E27E-44EA-A7C6-926AC495835F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SworDamageApp2", "SworDamageApp2\SworDamageApp2.csproj", "{54312B4E-223E-4B36-AB04-DD98C33499EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -391,6 +393,22 @@ Global
 		{C047AB67-E27E-44EA-A7C6-926AC495835F}.Release|x64.Build.0 = Release|Any CPU
 		{C047AB67-E27E-44EA-A7C6-926AC495835F}.Release|x86.ActiveCfg = Release|Any CPU
 		{C047AB67-E27E-44EA-A7C6-926AC495835F}.Release|x86.Build.0 = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|x64.Build.0 = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Debug|x86.Build.0 = Debug|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|ARM64.Build.0 = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|x64.ActiveCfg = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|x64.Build.0 = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{54312B4E-223E-4B36-AB04-DD98C33499EB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
