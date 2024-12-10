@@ -1,4 +1,4 @@
-﻿while(true)
+﻿while (true)
 {
     Bird bird;
     Console.Write("\nPress P for pigeon, O for ostrich: ");
@@ -8,47 +8,11 @@
     else return;
     Console.Write("\nHow many eggs should it lay? ");
     if (!int.TryParse(Console.ReadLine(), out int numberOfEggs)) return;
+    
     Egg[] eggs = bird.LayEggs(numberOfEggs);
     foreach (Egg egg in eggs)
     {
         Console.WriteLine(egg.Description);
-    }
-}
-
-class Pigeon: Bird
-{
-    public override Egg[] LayEggs(int numberOfEggs)
-    {
-
-        Egg[] eggs = new Egg[numberOfEggs];
-        for (int i = 0; i < numberOfEggs; i++)
-        {
-            if (Random.Shared.Next(4) == 0)
-                eggs[i] = new BrokenEgg("white");
-            else
-                eggs[i] = new Egg(Random.Shared.NextDouble() * 2 + 1, "white");
-        }
-        return eggs;
-    }
-}
-class BrokenEgg : Egg
-{
-
-    public BrokenEgg(string color) : base(0, $"broken {color}")
-    {
-        Console.WriteLine("A bird laid a broken egg");
-    }
-}
-class Ostrich : Bird
-{
-    public override Egg[] LayEggs(int numberOfEggs)
-    {
-        Egg[] eggs = new Egg[numberOfEggs];
-        for (int i = 0; i < numberOfEggs; i++)
-        {
-            eggs[i] = new Egg(Random.Shared.NextDouble() + 12, "speckled");
-        }
-        return eggs;
     }
 }
 
@@ -66,11 +30,38 @@ class Egg
         get { return $"A {Size:0.00}cm {Color} egg"; }
     }
 }
+
 class Bird
 {
     public virtual Egg[] LayEggs(int numberOfEggs)
     {
         Console.Error.WriteLine("Bird.LayEggs should never get called");
         return new Egg[0];
+    }
+}
+
+class Pigeon : Bird
+{
+    public override Egg[] LayEggs(int numberOfEggs)
+    {
+        Egg[] eggs = new Egg[numberOfEggs];
+        for (int i = 0; i < numberOfEggs; i++)
+        {
+            eggs[i] = new Egg(Random.Shared.NextDouble() * 2 + 1, "White");
+        }
+        return eggs; 
+    }
+}
+
+class Ostrich : Bird
+{
+    public override Egg[] LayEggs(int numberOfEggs)
+    {
+        Egg[] eggs = new Egg[numberOfEggs];
+        for (int i = 0; i < numberOfEggs; i++)
+        {
+            eggs[i] = new Egg(Random.Shared.NextDouble() + 12, "White");
+        }
+        return eggs;
     }
 }

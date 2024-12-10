@@ -1,4 +1,5 @@
-﻿using PickRandomCards;
+﻿
+using PickRandomCards;
 namespace PickRandomCards.MAUI
 {
     public partial class MainPage : ContentPage
@@ -10,30 +11,25 @@ namespace PickRandomCards.MAUI
             InitializeComponent();
         }
 
-      
         private void PickCardsButton_Clicked(object sender, EventArgs e)
         {
-            PickedCards.Text = String.Empty;
-            string? line = NumberOfCards.Text;
-            if (int.TryParse(line, out int numberOfCards))
+            
+            if (int.TryParse(NumberOfCards.Text, out int numberOfCards))
             {
-                string[] ret = CardPicker.PickSomeCards(numberOfCards);
-                /*if(!string.IsNullOrEmpty(PickedCards.Text))
-                {
-                    PickedCards.Text += Environment.NewLine;
-                }*/
-                foreach (string card in ret)
+                PickedCards.Text = String.Empty;
+                string[] cards = CardPicker.PickSomeCards(numberOfCards);
+                foreach (string card in cards)
                 {
                     PickedCards.Text += card + Environment.NewLine;
                 }
-                PickedCards.Text += Environment.NewLine + $"You picked {NumberOfCards.Text} cards.";
             }
             else
             {
-                PickedCards.Text ="Please enter a valid number";
+                PickedCards.Text = "Please enter a valid number";
             }
+            PickedCards.Text += Environment.NewLine + "You picked " + numberOfCards + " cards.";
             
-            
+
         }
     }
 
